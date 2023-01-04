@@ -16,15 +16,17 @@ body {
 .page-header {
   display: flex;
   width: 1200px;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-evenly;
   border-bottom: 1px solid #ececec;
   margin-bottom: 0 auto;
+  margin-left: 215px;
 }
 
 .container {
-  justify-content: 1200px;
-  margin: 0 auto;
+  width: 1200px;
+  margin: auto;
+  justify-content: center;
 }
 
 .unstyled-list {
@@ -33,15 +35,17 @@ body {
 
 .main-nav-list {
   list-style-type: none;
+  display: inline-block;
+  flex-grow: 1;
 }
 
 .main-nav-item {
   display: inline-block;
-  margin-left: 50px;
+  margin-right: 50px;
 }
 .contact-list-item {
   display: inline-block;
-  margin-left: 40px;
+  margin-right: 70px;
 }
 
 .link {
@@ -56,6 +60,7 @@ body {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+  margin-left: 70px;
 }
 .logo-first-section {
   color: var(--brand-color);
@@ -76,10 +81,18 @@ body {
 
 /* Index section */
 /* Hero section*/
+.hero-element,
+.motto,
+.request-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .hero-element {
   background: #2f303a;
-  width: 1200px;
+  width: 1600px;
   height: 600px;
   left: 0px;
   top: 80px;
@@ -93,7 +106,7 @@ body {
 
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 900;
+  font-weight: 900px;
   font-size: 44px;
   line-height: 60px;
   text-align: center;
@@ -117,19 +130,20 @@ body {
 
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
+
   background: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-style: none;
+  flex-wrap: nowrap;
+  margin-top: 30px;
 }
 
 /* about us section*/
 .about-title {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -140,12 +154,26 @@ body {
 .about-text {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+.about-section {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-top: 94px;
+  width: 1200px;
+}
+.about {
+  margin-right: 20px;
+}
+
 /* What we do section */
 .section-title {
   font-family: "Roboto";
@@ -156,20 +184,24 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 img {
-  width: 250px;
+  width: 300px;
 }
 .unstyled-listss {
   display: flex;
   justify-content: space-between;
-  max-width: 800px;
-  margin: 0 auto;
   list-style-type: none;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .we-do-section {
   width: 100%;
+  margin-left: 215px;
+  margin-right: 215px;
 }
 
 /* Team section */
@@ -201,9 +233,16 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.somebody {
+  background-color: #ffffff;
+}
 .team-section {
-  width: 1200 px;
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
+  justify-content: center;
+  background: #f5f4fa;
 }
 
 /* Portfolio section */
@@ -247,11 +286,15 @@ img {
 /*Footer section*/
 .page-footer {
   background: #2f303a;
-  width: 1200px;
+  width: 1600px;
   height: 251px;
-  left: 0px;
-  top: 1628px;
+  display: flex;
+
+  align-items: flex-start;
+
+  margin-bottom: 0 auto;
 }
+
 .logo-last-section {
   color: #ffffff;
 }
