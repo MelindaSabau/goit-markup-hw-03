@@ -15,12 +15,11 @@ body {
 /* Menu section */
 .page-header {
   display: flex;
-  width: 1200px;
+  width: 100%;
   align-items: center;
   justify-content: space-evenly;
   border-bottom: 1px solid #ececec;
   margin-bottom: 0 auto;
-  margin-left: 215px;
 }
 
 .container {
@@ -45,7 +44,7 @@ body {
 }
 .contact-list-item {
   display: inline-block;
-  margin-right: 70px;
+  margin-left: 40px;
 }
 
 .link {
@@ -60,7 +59,6 @@ body {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  margin-left: 70px;
 }
 .logo-first-section {
   color: var(--brand-color);
@@ -92,7 +90,7 @@ body {
 
 .hero-element {
   background: #2f303a;
-  width: 1600px;
+  width: 100%;
   height: 600px;
   left: 0px;
   top: 80px;
@@ -165,8 +163,7 @@ body {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-left: 215px;
-  margin-right: 215px;
+
   margin-top: 94px;
   width: 1200px;
 }
@@ -187,21 +184,15 @@ body {
   margin-top: 94px;
   margin-bottom: 50px;
 }
-img {
-  width: 300px;
-}
+
 .unstyled-listss {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  margin-left: 70px;
-  margin-right: 70px;
 }
 
 .we-do-section {
   width: 100%;
-  margin-left: 215px;
-  margin-right: 215px;
 }
 
 /* Team section */
@@ -221,6 +212,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 10px;
 }
 
 .function {
@@ -232,21 +224,21 @@ img {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 .somebody {
   background-color: #ffffff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding-bottom: 30px;
-  box-shadow: 1px 3px #adadb1;
+  box-shadow: 1px 3px #c3c3c9;
 }
 .team-section {
-  width: 1600px;
+  width: 100%;
   height: 648px;
-  left: 0px;
-  top: 1449px;
-  justify-content: center;
+  margin-top: 94px;
   background: #f5f4fa;
+  padding: 10px;
 }
 
 /* Portfolio section */
@@ -272,11 +264,15 @@ img {
 
 .card {
   border: 1px solid #ececec;
-  width: 300px;
+  width: 370px;
+  height: 100px;
   margin-bottom: 30px;
-  line-height: 0px;
+  border-top-style: none;
+  padding-top: 10px;
 }
-.product {
+
+.product-img {
+  margin-bottom: 0px;
 }
 
 .product-name {
@@ -287,6 +283,9 @@ img {
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
+  margin-left: 24px;
+  margin-bottom: 4px;
+  margin-top: 10px;
 }
 .product-type {
   font-family: "Roboto";
@@ -296,6 +295,8 @@ img {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
+  margin-left: 24px;
+  margin-top: 4px;
 }
 .unstyled-btns {
   display: flex;
@@ -320,11 +321,12 @@ img {
 /*Footer section*/
 .page-footer {
   background: #2f303a;
-  width: 1600px;
-  height: 251px;
+  width: 100%;
+
   display: flex;
 
   margin-bottom: 0 auto;
+  padding: 30px;
 }
 
 .logo-last-section {
@@ -353,9 +355,12 @@ img {
 
 .info {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 12px;
 }
 
-.section {
-  padding: 94px;
+.info:first-child {
+  margin-bottom: 28px;
 }
